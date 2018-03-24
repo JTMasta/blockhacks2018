@@ -1,0 +1,183 @@
+@import 'colors';
+
+.App{
+    width: 100vw;
+   
+    h1{
+        color:red;
+    }
+    .divider{
+        height: 1vh;
+        background-color: $main_color;
+        width: 100vw;
+    }
+    .overlay{
+        width: 100vw;
+        height: 75vh; 
+        z-index: 1;
+        background-color: black;
+        opacity: 0.3;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .team_menu{
+        position: absolute;
+        right: -30vw;
+        z-index: 4;
+        .team_item {
+            display: flex;
+            height: 18vh;
+            width:30vw;
+            background-color: orange;
+
+        }
+    }
+    .slider_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .slider_info_wrapper{
+            z-index: 3;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                
+            .slider_info{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 650px;
+                .slider_logo{
+                    width:50vw;
+                    height: 30vh;
+                    object-fit: contain;
+                    margin: 0;
+                }
+                span{
+                    color:white;
+                    font-family: $main_font_family;
+                    
+                }
+               
+                
+        
+            }
+            .join_us{
+                
+                span{
+                    font-family: $main_font_family;
+                    font-size: 2rem;
+                    color: white;
+                }
+                #join_button{
+                    background-color: $main_color;
+                    height: 3rem;
+                    border-radius: 50px;
+                    width:100%;
+                    margin-top: 2rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+            }
+        }
+
+    }
+   
+    .header_wrapper{
+        height:10vh;
+        width:100vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .header_links{
+            display: flex;
+            .header_link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                a{
+                    padding: 1.2rem;
+                    padding-bottom: 0;
+                    text-decoration: none;
+                    color: black;
+                    pointer-events: all;
+                    font-family: $main_font_family;
+                }
+                .header_svg{
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        
+    }
+    .about_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 30vh;
+        #About_title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: $main_font_family;
+        }
+        p{
+            max-width: 800px;
+            text-align: center;
+            font-family: $main_font_family;
+        }
+        
+    }
+    .sponsor_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 30vh;
+        #sponsor_title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: $main_font_family;
+        }
+        .sponsor_logos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            img{
+                margin: 1rem;
+                height: 120px;
+                cursor: pointer;
+            }
+        } 
+    }
+}
+.slider_teams{
+    text-align: center;
+    img{
+        height: 75vh;
+        width:100vw;
+        object-fit: cover;
+        object-position: 35%;
+
+    }
+    
+}

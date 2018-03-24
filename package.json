@@ -1,0 +1,36 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel ./public/index.html --open",
+    "build": "cross-env NODE_ENV=production parcel build ./public/index.html --no-minify --public-url /",
+    "hot": "cross-env NODE_ENV=development parcel watch ./public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-runtime": "^6.26.0",
+    "barba.js": "^1.0.0",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "axios": "^0.18.0",
+    "babel-preset-react-app": "^3.1.1",
+    "moment": "^2.21.0",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}

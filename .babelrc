@@ -1,0 +1,10 @@
+{
+    "presets": ["env","react-app"],
+    "plugins": [
+        ["transform-runtime",
+        {
+            "polyfill": false,
+            "regenerator": true
+        }]
+    ]
+}

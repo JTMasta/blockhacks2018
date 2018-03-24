@@ -75,7 +75,11 @@ export class BuyButton extends React.Component {
   render() {
     return (
       <div>
-        <Button type="primary" onClick={this.showModal}>
+        <Button
+          type="primary"
+          onClick={this.showModal}
+          style={{ margin: "0 15px 15px 0" }}
+        >
           Buy
         </Button>
         <BuyForm

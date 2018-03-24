@@ -1,5 +1,5 @@
 import React from "react";
-import { BuyButton, SellButton } from "../../components";
+import { BuyButton, SellButton, AdBox } from "../../components";
 import { database } from "../../base";
 
 export class Homepage extends React.Component {
@@ -27,19 +27,24 @@ export class Homepage extends React.Component {
   render() {
     console.log(this.state);
 
-    let list = []
+    const { buyAdsList } = this.state;
 
-    for (var property in this.state.buyAdsList) {
-      if (this.state.buyAdsList.hasOwnProperty(property)) {
-        list.push(this.state.buyAdsList[property].description);
+    let list = [];
+
+    for (var property in buyAdsList) {
+      if (buyAdsList.hasOwnProperty(property)) {
+        list.push(<AdBox ad={buyAdsList[property]} />);
       }
     }
 
     return (
       <div>
-        <BuyButton />
-        <SellButton />
-        {list}
+        <div style={{ display: "flex" }}>
+          <BuyButton />
+          <SellButton />
+        </div>
+
+        <div>{list}</div>
       </div>
     );
   }

@@ -58,7 +58,7 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
+    console.log("state: ", this.state);
 
     const { email, loggedIn } = this.state;
 
@@ -111,7 +111,7 @@ class App extends Component {
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
-            Health ©2018 Created by Hacker Gang
+            BarterCoin ©2018 Created by New devs on the block
           </Footer>
         </Layout>
       </div>
